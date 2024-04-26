@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="About Me"
+	description="Lorem ipsum dolor sit amet"
+	pubDate={new Date('August 08 2021')}
+	heroImage="/blog-placeholder-about.jpg"
+>
+
+<body>
+	<p>
+		Hello, I'm a 23-year-old software engineering and cybersecurity student at <b><a href="https://www.fiap.com.br">FIAP</a></b>.
+	</p>
+	<p>
+		At the moment, I'm working as a SOC Analyst, so I have been focusing my studies on Blue Team topics, but I try to keep my knowledge as broad as possible. My main interests are Application Security and DevSecOps.
+	</p>
+
+	<p>
+		As stated on the homepage, I will use this blog to post about my projects, share knowledge with others, and using this platform as a motivational tool to maintain a regular update schedule.
+	</p>
+
+	<p>
+		If you want to get in contact with me, you can do it via <a href="mailto:andre.luiz.ribeiro@proton.me">email</a> or <a href="https://www.linkedin.com/in/andr3lv/">LinkedIn</a>.
+	</p>
+
+	<p>
+		If you don't want to get in contact but you want to see what I have been doing, here it's my <a href="https://github.com/whoisandre">GitHub</a>.
+	</p>
+</body>
+
+</Layout>
+
+<style>
+	body{
+		overflow: hidden;
+		color: #555555;
+	}
+	a{
+		color: #555555;
+		text-decoration: none;
+	}
+	.socials {
+		display: flex;
+		gap: 10px;
+	}
+	.mail {
+		color: #222222
+	}
+	.mail:hover {
+		color: #6B1EFF;
+		transition: 0.3s ease-in-out;
+		transform: scale(1.2);
+	}
+	.linkedin:hover {
+		color: #0a66c2;
+		transition: 0.3s ease-in-out;
+		transform: scale(1.2);
+	}
+</style>
